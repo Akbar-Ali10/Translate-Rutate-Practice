@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    text-align: center;
+    padding-top: 100px;
+    animation: move 1s ease alternate-reverse forwards;
+
+}
+.header-logo{
+    animation: logo 2s ease infinite;
+}
+@keyframes logo {
+    0%{
+        color: aqua;
+    }50%{
+        color: brown;
+    }75%{
+        color: coral;
+    }100%{
+        color: crimson;
+    }
+}
+.main p{
+    padding-top: 50px;
+    max-width: 900px;
+    padding-left: 500px;
+    animation: move 1.5s ease alternate-reverse forwards;
+    color: chartreuse;
+    font-size: 20px;
+
+}
+.main button{
+    margin-top: 50px;
+    padding: 10px 20px ;
+    border-radius: 9px;
+    border: 1px solid black;
+    background-color: aquamarine;
+
+    animation: move 2s ease alternate-reverse forwards;
+}
+
+@keyframes move {
+    0%{
+        filter: blur(0px);
+        transform: translateX(20px);
+    }
+    100%{
+        filter: blur(100px);
+        transform: translateX(-200px);
+    }
+}
